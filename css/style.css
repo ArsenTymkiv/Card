@@ -1,66 +1,126 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/* END RESET */
-
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background: url(/images/bg01.jpg) no-repeat center center fixed;
-    background-size: cover;
+	font-family: 'Open Sans', sans-serif;
 }
 
+.header{
+	height: 100px;
+	background: #007991;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
-
-body, html{
-	width: 100%;
+.nav-menu{
+	list-style: none;
+	height: 100px;
+}
+.nav-menu li{
 	height: 100%;
+	display: flex;
 }
+
+.nav-menu li a{
+	padding: 0 20px;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	font-size: 18px;
+}
+
+.nav-menu li a::after{
+	content: '';
+	display: block;
+	height: 4px;
+	width: 0;
+	background: #fff;
+	transition: all 0.3s ease-out;
+}
+
+.nav-menu li a:hover::after{
+	width: 100%;
+}
+
+.content{
+	display: flex;
+	border: 1px solid #ff9635;
+	height: calc(100vh - 100px);
+	align-items: center;
+	justify-content: center;
+}
+
+.logo{
+	max-width: 250px;
+}
+
+.hero-img{
+	max-width: 670px;
+	height: auto;
+}
+
+.content-left{
+	width: 30%;
+}
+
+.content h1{
+	font-size: 54px;
+	color: #007991;
+	text-transform: uppercase;
+}
+
+.content h2{
+	font-size: 25px;
+	color: #FF9635;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+.content p{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 31px;
+	margin: 30px 0;
+}
+
+.cta{
+	padding: 15px 30px;
+	background: #FF9635;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 50px;
+	opacity: 0.7;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
+.cta:hover{
+	opacity: 1;
+}
+
+.signup-btn{
+	padding: 15px 20px;
+	background: #FF9635;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 50px;
+	opacity: 0.7;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
 

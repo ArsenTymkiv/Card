@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business card</title>
-    <link rel="stylesheet" href="/css/style.css">
-     <!-- FONTS  -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-     <!-- END FONTS  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- END FONTS -->
+
 </head>
+
 <body>
-    <header id="header">
-        <h1>Eventually</h1>
-        <p>A simple template for telling the world when you'll launch<br>
-        your next big thing. Brought to you by <a href="http://html5up.net">HTML5 UP</a>.</p>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt="logo-programulka" class="logo"><a>
+        </div>
+        <ul class="nav-menu">
+            <li>
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">About</a>
+                <a href="#">Concat</a>
+                <a href="#">FAQ</a>  
+            </li>  
+        </ul>
     </header>
-    <form id="signup-form" method="post" action="#">
-        <input type="email" name="email" id="email" placeholder="Email Address">
-        <input type="submit" value="Sign Up">
-    <span class="message"></span></form>
-    <footer id="footer">
-        <ul class="icons">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>© Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </footer>
+    <main class="content">
+        <div class="content-left">
+            <h1>Practical</h1>
+            <h2>web development course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere amet dolore atque perferendis eveniet
+                repudiandae in nisi aliquam quisquam. Et at magnam veritatis nemo, dolore fugiat impedit quos quibusdam
+                unde.</p>
+                <button class="cta">Learn more</button>
+        </div>
+        <div class="content-right">
+            <img class="hero-img" src="./images/programming-hero.jpg" alt="programming hero">
+        </div>
+    </main>
+
 </body>
+
 </html>
